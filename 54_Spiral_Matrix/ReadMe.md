@@ -3,7 +3,9 @@
 When traversing the matrix in the spiral order, at any time we follow one out of the following four directions: RIGHT DOWN LEFT UP. Suppose we are working on a 5 x 3 matrix as such:
 
 0 1 2 3 4 5
+
 6 7 8 9 10
+
 11 12 13 14 15
 
 Imagine a cursor starts off at (0, -1), i.e. the position at '0', then we can achieve the spiral order by doing the following:
