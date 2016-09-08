@@ -1,4 +1,4 @@
-**<font size="20">solution 1</font>**
+**solution 1**
 
 When traversing the matrix in the spiral order, at any time we follow one out of the following four directions: RIGHT DOWN LEFT UP. Suppose we are working on a 5 x 3 matrix as such:
 
@@ -20,6 +20,13 @@ Thus, we can make use of a direction matrix that records the offset for all dire
 
 Another good thing about this implementation is that: If later we decided to do spiral traversal on a different direction (e.g. Counterclockwise), then we only need to change the Direction matrix; the main loop does not need to be touched.
 
-**<font size="20">solution 2</font>** 
+**solution 2**
+
+递归，每次看成完成一个矩形。矩形在不断地减小。
 
 ![image](https://github.com/limbo-china/leetcode/blob/master/54_Spiral_Matrix/solution_2.png)
+
+**solution 3**
+This is a very simple and easy to understand solution. I traverse right and increment rowBegin, then traverse down and decrement colEnd, then I traverse left and decrement rowEnd, and finally I traverse up and increment colBegin.
+
+The only tricky part is that when I traverse left or up I have to check whether the row or col still exists to prevent duplicates.
