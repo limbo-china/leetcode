@@ -1,4 +1,4 @@
-**solution 1**
+<font size=10>**solution 1** </font>
 
 When traversing the matrix in the spiral order, at any time we follow one out of the following four directions: RIGHT DOWN LEFT UP. Suppose we are working on a 5 x 3 matrix as such:
 
@@ -20,6 +20,6 @@ Thus, we can make use of a direction matrix that records the offset for all dire
 
 Another good thing about this implementation is that: If later we decided to do spiral traversal on a different direction (e.g. Counterclockwise), then we only need to change the Direction matrix; the main loop does not need to be touched.
 
-**solution 2**
+<font size=10> **solution 2** </font>
 
 ![image](https://github.com/limbo-china/leetcode/tree/master/54_Spiral_Matrix/sulotion_2.png)
