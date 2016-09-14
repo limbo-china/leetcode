@@ -9,12 +9,12 @@ int uniquePaths(int N, int M)
 		return 0;
 	for (n = 0; n <= N; n++) {
 		for (m = 0; m <= M; m++)
-			if (n == 0 && m == 0)
+			if (n == 0 || m == 0)
 				dp[n][m] = 0;
-			else if (n == 0)
-				dp[n][m] = 1;
 			else if (n == 1)
-				dp[n][m] = m + 1;
+				dp[n][m] = 1;
+			else if (m == 1)
+				dp[n][m] = 1;
 			else
 				dp[n][m] = dp[n-1][m]+dp[n][m-1];
 	}
